@@ -1,0 +1,279 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  color: #1a1a1a;
+  background-color: #f0ece9;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-link img {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+}
+
+.logo-link span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1; /* förhindrar att text-radhöjd skapar extra utrymme */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #f0e6dc;
+  color: #6f4e37;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header img {
+  width: auto;
+  object-fit: contain;
+}
+
+
+section {
+  padding: 4rem 2rem;
+  scroll-margin-top: 90px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+#home {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+#about,
+#contact,
+#privacy {
+  min-height: auto;
+}
+
+.home-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#home img {
+    flex: 1 1 18.75rem;
+  max-width: 25rem;
+  height: 15.625rem;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.home-text {
+  flex: 1 1 300px;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  margin-bottom: 0;
+}
+
+.highlight {
+  flex: 1 1 12.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.highlight h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.highlight p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#products h1 {
+  flex-basis: 100%; /*tvingar h1 att ta upp hela bredden */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+   flex: 1 1 15.625rem;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.product img {
+  width: 100%;
+  height: 13.75rem;
+  object-fit: cover;
+  display: block;
+}
+
+.product h2 {
+  margin-top: 1rem;
+}
+
+.product .price {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #6f4e37;
+}
+
+.product p:last-child {
+  padding-bottom: 1rem;
+}
+
+
+
+#contact form {
+  padding: 2rem;
+  max-width: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+#contact label {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+  outline: 3px solid #6f4e37;
+  outline-offset: 2px;
+  border-color: #6f4e37;
+}
+
+#contact textarea {
+  resize: vertical;
+  min-height: 7.5rem;
+}
+
+#contact button {
+  align-self: flex-start;
+  background-color: #6f4e37;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#contact button:hover {
+  background-color: #5a3e2b;
+}
+
+#contact button:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
+
+main a {
+  color: #6f4e37;
+  text-decoration: underline;
+}
+
+main a:hover {
+  color: #5a3e2b;
+}
+
+main a:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
