@@ -43,9 +43,11 @@ header {
 }
 
 .logo-link span {
-  font-size: 1.25rem;
-  font-weight: 600;
-  line-height: 1; /* förhindrar att text-radhöjd skapar extra utrymme */
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+  line-height: 1; 
 }
 
 nav ul {
@@ -195,6 +197,11 @@ section {
   padding-bottom: 1rem;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 #contact form {
@@ -276,4 +283,38 @@ footer {
   padding: 0.5rem;
   text-align: center;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Anpassningar för mobil och mindre skärmar (max 768px) */
+
+@media (max-width: 48rem) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .home-content {
+    flex-direction: column;
+  }
+
+  #home img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .product {
+    max-width: none;
+  }
 }
