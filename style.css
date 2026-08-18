@@ -164,21 +164,26 @@ section h2 {
   flex: 1 1 15.625rem;
   max-width: 20rem;
   border-radius: 0.5rem;
+  overflow: hidden;
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .product img {
-  width: 100%;
+   width: 100%;
   height: 13.75rem;
   object-fit: cover;
   display: block;
 }
 
+.product-content {
+  padding: 1rem;
+}
+
 .product h3 {
   font-size: 1.25rem;
-  margin: 1rem 0 0.5rem;
+   margin: 0 0 0.5rem;
 }
 
 .product .price {
