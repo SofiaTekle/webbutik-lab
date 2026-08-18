@@ -152,20 +152,16 @@ section h2 {
   font-size: 0.95rem;
 }
 
-#products {
+.product-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-#products h2 {
-  flex-basis: 100%; /*gör att rubriken hamnar på en egen rad*/
-}
-
 .product {
   display: flex;
   flex-direction: column;
-   flex: 1 1 15.625rem;
+  flex: 1 1 15.625rem;
   max-width: 20rem;
   border-radius: 0.5rem;
   background-color: #ffffff;
@@ -189,7 +185,7 @@ section h2 {
   margin-top: auto;
   padding-top: 0.5rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #6f4e37;
 }
 
@@ -204,15 +200,28 @@ video {
 }
 
 
+#contact {
+  padding-top: 1rem;
+}
 
 
 #contact form {
   padding: 2rem;
-  max-width: 31.25rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
+
+#contact > p {
+  max-width: 40rem;
+  margin: 1.5rem auto 0;
+}
+
 
 #contact label {
   display: inline-block;
@@ -304,6 +313,7 @@ footer {
 
   section {
     padding: 3rem 1rem;
+    scroll-margin-top: 150px;
   }
 
   .home-content {
