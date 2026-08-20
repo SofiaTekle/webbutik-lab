@@ -78,7 +78,7 @@ a {
 }
 
 section {
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
   scroll-margin-top: 90px;
   max-width: 1100px;
   margin: 0 auto;
@@ -86,6 +86,8 @@ section {
 
 section h2 {
   font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 #home {
@@ -93,9 +95,9 @@ section h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 2.5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  gap: 1rem;
+padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 #about,
@@ -123,30 +125,40 @@ section h2 {
   flex: 1 1 18.75rem;
 }
 
-.highlights {
+.featured-products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-
-  margin-bottom: 0;
+  padding: 0;
 }
 
-.highlight {
-  flex: 1 1 12.5rem;
-  background-color: #ffffff;
+.featured-product {
+  width: 33.33%;
+  padding: 1rem;
+}
+
+.featured-products-list img {
+  width: 100%;
+  height: 12rem;
+  display: block;
   border-radius: 0.5rem;
-  padding: 1.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
 }
 
-.highlight h2 {
-  font-size: 1.1rem;
-  margin: 0 0 0.5rem;
+#featured-products {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.highlight p {
-  margin: 0;
-  font-size: 0.95rem;
+#featured-products h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#featured-products > p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .product-list {
@@ -172,7 +184,7 @@ section h2 {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background-color: #a05d3e;;
+  background-color: #a05d3e;
   color: #ffffff;
 
   padding: 0.4rem 0.75rem;
@@ -213,10 +225,6 @@ section h2 {
 video {
   max-width: 100%;
   height: auto;
-}
-
-#contact {
-  padding-top: 1rem;
 }
 
 #contact form {
@@ -309,8 +317,16 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Anpassningar för mobil och mindre skärmar (max 768px) */
+/* Responsiva anpassningar för olika skärmstorlekar */
 
+/* 900px och mindre – surfplatta och mindre skärmar */
+@media (max-width: 56.25rem) {
+  .featured-product {
+    width: 50%;
+  }
+}
+
+/* 768px och mindre – mindre skärmar */
 @media (max-width: 48rem) {
   header {
     flex-direction: column;
@@ -323,7 +339,7 @@ footer {
   }
 
   section {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1.5rem;
     scroll-margin-top: 150px;
   }
 
@@ -340,5 +356,12 @@ footer {
 
   .product {
     max-width: none;
+  }
+}
+
+/* 600px och mindre – mobil */
+@media (max-width: 37.5rem) {
+  .featured-product {
+    width: 100%;
   }
 }
