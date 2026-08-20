@@ -47,7 +47,7 @@ header {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.02rem;
-  line-height: 1; 
+  line-height: 1;
 }
 
 nav ul {
@@ -77,7 +77,6 @@ a {
   color: inherit;
 }
 
-
 section {
   padding: 4rem 2rem;
   scroll-margin-top: 90px;
@@ -87,7 +86,6 @@ section {
 
 section h2 {
   font-size: 1.75rem;
-  
 }
 
 #home {
@@ -99,7 +97,6 @@ section h2 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
 
 #about,
 #contact,
@@ -168,10 +165,25 @@ section h2 {
   background-color: #ffffff;
   padding: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #a05d3e;;
+  color: #ffffff;
+
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .product img {
-   width: 100%;
+  width: 100%;
   height: 13.75rem;
   object-fit: cover;
   display: block;
@@ -183,7 +195,7 @@ section h2 {
 
 .product h3 {
   font-size: 1.25rem;
-   margin: 0 0 0.5rem;
+  margin: 0 0 0.5rem;
 }
 
 .product .price {
@@ -198,17 +210,14 @@ section h2 {
   padding-bottom: 1rem;
 }
 
-
 video {
   max-width: 100%;
   height: auto;
 }
 
-
 #contact {
   padding-top: 1rem;
 }
-
 
 #contact form {
   padding: 2rem;
@@ -226,7 +235,6 @@ video {
   max-width: 40rem;
   margin: 1.5rem auto 0;
 }
-
 
 #contact label {
   display: inline-block;
@@ -300,8 +308,6 @@ footer {
   text-align: center;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 
 /* Anpassningar för mobil och mindre skärmar (max 768px) */
 
