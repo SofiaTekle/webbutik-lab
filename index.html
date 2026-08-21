@@ -9,6 +9,7 @@
     />
     <title>Kaffehörnan</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,9 +24,23 @@
           <li><a href="#about">Om oss</a></li>
           <li><a href="#contact">Kontakt</a></li>
           <li><a href="#privacy">Integritetspolicy</a></li>
+          <li>
+            <button id="cart-toggle">
+              Varukorg <span id="cart-count" class="hidden">0</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <div id="cart" class="hidden">
+      <div class="cart-header">
+        <h2>Din varukorg</h2>
+        <button id="cart-close">&times;</button>
+      </div>
+      <div id="cart-items"></div>
+      <div id="cart-total"></div>
+    </div>
 
     <main>
       <section id="home">
@@ -100,6 +115,14 @@
                 syra. Perfekt för dig som gillar ett aromatiskt kaffe.
               </p>
               <p class="price">Pris: 129 kr</p>
+              <input type="number" class="qty-input" value="1" min="1" />
+              <button
+                class="buy-button"
+                data-name="Ljusrostat kaffe"
+                data-price="129"
+              >
+                Lägg i varukorg
+              </button>
             </div>
           </article>
 
@@ -113,6 +136,14 @@
                 choklad. En klassiker för dig som gillar ett starkt kaffe.
               </p>
               <p class="price">Pris: 139 kr</p>
+              <input type="number" class="qty-input" value="1" min="1" />
+              <button
+                class="buy-button"
+                data-name="Mörkrostat kaffe"
+                data-price="139"
+              >
+                Lägg i varukorg
+              </button>
             </div>
           </article>
 
@@ -126,6 +157,14 @@
                 kaffe hemma varje morgon.
               </p>
               <p class="price">Pris: 899 kr</p>
+              <input type="number" class="qty-input" value="1" min="1" />
+              <button
+                class="buy-button"
+                data-name="Kaffemaskin"
+                data-price="899"
+              >
+                Lägg i varukorg
+              </button>
             </div>
           </article>
 
@@ -139,6 +178,14 @@
                 mer kropp och naturliga oljor kvar i smaken.
               </p>
               <p class="price">Pris: 249 kr</p>
+              <input type="number" class="qty-input" value="1" min="1" />
+              <button
+                class="buy-button"
+                data-name="Fransk press"
+                data-price="249"
+              >
+                Lägg i varukorg
+              </button>
             </div>
           </article>
 
@@ -152,6 +199,14 @@
                 perfekt för din morgonrutin.
               </p>
               <p class="price">Pris: 99 kr</p>
+              <input type="number" class="qty-input" value="1" min="1" />
+              <button
+                class="buy-button"
+                data-name="Kaffekoppar"
+                data-price="99"
+              >
+                Lägg i varukorg
+              </button>
             </div>
           </article>
 
@@ -164,6 +219,14 @@
                 kaffebryggare eller tratt.
               </p>
               <p class="price">Pris: 49 kr</p>
+              <input type="number" class="qty-input" value="1" min="1" />
+              <button
+                class="buy-button"
+                data-name="Kaffefilter"
+                data-price="49"
+              >
+                Lägg i varukorg
+              </button>
             </div>
           </article>
         </div>
