@@ -6,9 +6,11 @@ const cart = document.getElementById("cart");
 
 const cartItemsContainer = document.getElementById("cart-items");
 const cartTotalContainer = document.getElementById("cart-total");
-const cartItems = {};
 
 const cartCountElement = document.getElementById("cart-count");
+const clearCartButton = document.getElementById("clear-cart");
+
+const cartItems = {};
 
 buyButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -35,6 +37,13 @@ cartToggleBtn.addEventListener("click", () => {
 
 cartCloseBtn.addEventListener("click", () => {
   cart.classList.add("hidden");
+});
+
+clearCartButton.addEventListener("click", () => {
+  for (const key in cartItems) {
+    delete cartItems[key];
+  }
+  renderCart();
 });
 
 const renderCart = () => {
@@ -90,7 +99,6 @@ const renderCart = () => {
     });
 
     cartItemsContainer.appendChild(itemElement);
-    cartCountElement.textContent = totalItems;
   }
 
   if (totalItems > 0) {
@@ -99,5 +107,10 @@ const renderCart = () => {
     cartCountElement.classList.add("hidden");
   }
 
-  cartTotalContainer.textContent = `Totalt: ${total} kr`;
+  cartCountElement.textContent = totalItems;
+
+  cartTotalContainer.innerHTML = `
+    <span>Totalt</span>
+    <span>${total} kr</span>
+`;
 };

@@ -366,7 +366,7 @@ section h2 {
 
 #cart-total {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-top: 1rem;
   margin-top: 0.5rem;
   border-top: 2px solid #6f4e37;
@@ -408,6 +408,23 @@ section h2 {
   padding: 0.15rem 0.45rem;
   border-radius: 999px;
   margin-left: 0.4rem;
+}
+
+#clear-cart {
+    background: none;
+    border: 1px solid #999;
+    color: #666;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+#clear-cart:hover {
+    background-color: #f0f0f0;
+    border-color: #666;
 }
 
 video {
@@ -505,17 +522,15 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsiva anpassningar för olika skärmstorlekar */
 
-/* 900px och mindre – surfplatta och mindre skärmar */
+
+/* 900px och mindre – mindre skärmar */
 @media (max-width: 56.25rem) {
+
   .featured-product {
     width: 50%;
   }
-}
 
-/* 768px och mindre – mindre skärmar */
-@media (max-width: 48rem) {
   header {
     flex-direction: column;
     gap: 1rem;
@@ -536,7 +551,7 @@ footer {
   }
 
   .home-content img {
-    max-width: 25rem;
+    max-width: 32rem;
     width: 100%;
     height: auto;
     margin: 0 auto;
