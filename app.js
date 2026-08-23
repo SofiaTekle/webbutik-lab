@@ -1,3 +1,7 @@
+const menuToggleBtn = document.getElementById("menu-toggle");
+const mainNav = document.getElementById("main-nav");
+
+
 const buyButtons = document.querySelectorAll(".buy-button");
 
 const cartToggleBtn = document.getElementById("cart-toggle");
@@ -30,6 +34,11 @@ buyButtons.forEach((button) => {
     renderCart();
   });
 });
+
+menuToggleBtn.addEventListener("click", () => {
+  mainNav.classList.toggle("open");
+});
+
 
 cartToggleBtn.addEventListener("click", () => {
   cart.classList.toggle("hidden");
