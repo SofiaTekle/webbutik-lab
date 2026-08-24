@@ -16,6 +16,34 @@ const clearCartButton = document.getElementById("clear-cart");
 
 const cartItems = {};
 
+// --- Hamburgermeny ---
+
+menuToggleBtn.addEventListener("click", () => {
+  mainNav.classList.toggle("open");
+});
+
+// Stäng menyn om man klickar utanför den
+document.addEventListener("click", (event) => {
+  const clickedInsideNav = mainNav.contains(event.target);
+  const clickedToggleButton = menuToggleBtn.contains(event.target);
+
+  if (mainNav.classList.contains("open") && !clickedInsideNav && !clickedToggleButton) {
+    mainNav.classList.remove("open");
+  }
+});
+
+// Stäng menyn om man klickar på en länk inuti den
+const navLinks = mainNav.querySelectorAll("a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mainNav.classList.remove("open");
+  });
+});
+
+
+// --- Varukorg ---
+
 buyButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const productName = button.dataset.name;
@@ -35,8 +63,18 @@ buyButtons.forEach((button) => {
   });
 });
 
-menuToggleBtn.addEventListener("click", () => {
-  mainNav.classList.toggle("open");
+// Stäng varukorgen om man klickar utanför den
+document.addEventListener("click", (event) => {
+  const clickedInsideCart = cart.contains(event.target);
+  const clickedToggleButton = cartToggleBtn.contains(event.target);
+
+  if (!cart.classList.contains("hidden") && !clickedInsideCart && !clickedToggleButton) {
+    cart.classList.add("hidden");
+  }
+});
+
+cart.addEventListener("click", (event) => {
+  event.stopPropagation();
 });
 
 
