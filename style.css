@@ -203,7 +203,12 @@ section h2 {
   color: #6f4e37;
   font-weight: 700;
   font-size: 1.1rem;
-  margin-top: 0.5rem;
+  margin-top: auto;
+}
+
+.featured-product-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .product-list {
@@ -320,7 +325,7 @@ section h2 {
   border-radius: 4px;
   font-size: 1rem;
   text-align: center;
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: 0.65rem;
 }
 

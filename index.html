@@ -1,24 +1,25 @@
 <!doctype html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Kaffehörnan erbjuder färskrostat kaffe och kaffetillbehör för dig som älskar riktigt gott kaffe."
-    />
+    >
     <title>Kaffehörnan</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
   </head>
   <body>
     <header>
+
       <a href="#home" class="logo-link">
-        <img src="images/coffelogo.png" alt="Kaffehörnan" />
+        <img src="images/coffelogo.png" alt="Kaffehörnan">
         <span>Kaffehörnan</span>
       </a>
 
-      <nav id="main-nav">
+     <nav id="main-nav">
         <ul>
           <li><a href="#home">Hem</a></li>
           <li><a href="#products">Produkter</a></li>
@@ -28,17 +29,19 @@
         </ul>
       </nav>
 
-      <div class="header-actions">
-        <button id="cart-toggle">
-          Varukorg <span id="cart-count" class="hidden">0</span>
-        </button>
+<div class="header-actions">
+    <button id="cart-toggle">
+      Varukorg <span id="cart-count" class="hidden">0</span>
+    </button>
 
-        <button id="menu-toggle" aria-label="Öppna meny">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-      </div>
+    <button id="menu-toggle" aria-label="Öppna meny">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+
+
     </header>
 
     <div id="cart" class="hidden">
@@ -51,12 +54,13 @@
       <button id="clear-cart">Töm varukorg</button>
     </div>
 
+
     <main>
       <section id="home">
         <h1>Välkommen till Kaffehörnan</h1>
 
         <div class="home-content">
-          <img src="images/coffehome.jpg" alt="Kaffebönor" />
+          <img src="images/coffehome.jpg" alt="Kaffebönor">
           <div class="home-text">
             <p>
               Här hittar du noggrant utvalda kaffebönor och tillbehör för dig
@@ -80,7 +84,7 @@
           </p>
           <div class="featured-products-list">
             <article class="featured-product">
-              <img src="images/coffe1.jpg" alt="Ljusrostade kaffebönor" />
+              <img src="images/coffe1.jpg" alt="Ljusrostade kaffebönor">
               <div class="featured-product-content">
                 <h3>Ljusrostat kaffe</h3>
                 <p>Ett friskt och balanserat kaffe med fruktiga toner.</p>
@@ -89,7 +93,7 @@
             </article>
 
             <article class="featured-product">
-              <img src="images/frenchpress.jpg" alt="Fransk press" />
+              <img src="images/frenchpress.jpg" alt="Fransk press">
               <div class="featured-product-content">
                 <h3>Fransk press</h3>
                 <p>En enkel press för en fyllig och smakrik kopp kaffe.</p>
@@ -98,7 +102,7 @@
             </article>
 
             <article class="featured-product">
-              <img src="images/coffemug.jpg" alt="Glasmuggar" />
+              <img src="images/coffemug.jpg" alt="Glasmuggar">
               <div class="featured-product-content">
                 <h3>Kaffekoppar</h3>
                 <p>Eleganta glasmuggar för din morgonrutin.</p>
@@ -115,7 +119,7 @@
         <div class="product-list">
           <article class="product">
             <span class="badge">Nyhet</span>
-            <img src="images/coffe1.jpg" alt="Ljusrostade kaffebönor" />
+            <img src="images/coffe1.jpg" alt="Ljusrostade kaffebönor">
 
             <div class="product-content">
               <h3>Ljusrostat kaffe</h3>
@@ -124,7 +128,7 @@
                 syra. Perfekt för dig som gillar ett aromatiskt kaffe.
               </p>
               <p class="price">Pris: 129 kr</p>
-              <input type="number" class="qty-input" value="1" min="1" />
+              <input type="number" class="qty-input" value="1" min="1">
               <button
                 class="buy-button"
                 data-name="Ljusrostat kaffe"
@@ -136,7 +140,7 @@
           </article>
 
           <article class="product">
-            <img src="images/coffe2.jpg" alt="Mörkrostade kaffebönor" />
+            <img src="images/coffe2.jpg" alt="Mörkrostade kaffebönor">
 
             <div class="product-content">
               <h3>Mörkrostat kaffe</h3>
@@ -145,7 +149,7 @@
                 choklad. En klassiker för dig som gillar ett starkt kaffe.
               </p>
               <p class="price">Pris: 139 kr</p>
-              <input type="number" class="qty-input" value="1" min="1" />
+              <input type="number" class="qty-input" value="1" min="1">
               <button
                 class="buy-button"
                 data-name="Mörkrostat kaffe"
@@ -158,7 +162,7 @@
 
           <article class="product">
             <span class="badge">Nyhet</span>
-            <img src="images/coffemachine.jpg" alt="Kaffemaskin" />
+            <img src="images/coffemachine.jpg" alt="Kaffemaskin">
             <div class="product-content">
               <h3>Kaffemaskin</h3>
               <p>
@@ -166,7 +170,7 @@
                 kaffe hemma varje morgon.
               </p>
               <p class="price">Pris: 899 kr</p>
-              <input type="number" class="qty-input" value="1" min="1" />
+              <input type="number" class="qty-input" value="1" min="1">
               <button
                 class="buy-button"
                 data-name="Kaffemaskin"
@@ -179,7 +183,7 @@
 
           <article class="product">
             <span class="badge">Populär</span>
-            <img src="images/frenchpress.jpg" alt="Fransk press" />
+            <img src="images/frenchpress.jpg" alt="Fransk press">
             <div class="product-content">
               <h3>Fransk press</h3>
               <p>
@@ -187,7 +191,7 @@
                 mer kropp och naturliga oljor kvar i smaken.
               </p>
               <p class="price">Pris: 249 kr</p>
-              <input type="number" class="qty-input" value="1" min="1" />
+              <input type="number" class="qty-input" value="1" min="1">
               <button
                 class="buy-button"
                 data-name="Fransk press"
@@ -200,7 +204,7 @@
 
           <article class="product">
             <span class="badge">Populär</span>
-            <img src="images/coffemug.jpg" alt="Glasmuggar" />
+            <img src="images/coffemug.jpg" alt="Glasmuggar">
             <div class="product-content">
               <h3>Kaffekoppar</h3>
               <p>
@@ -208,7 +212,7 @@
                 perfekt för din morgonrutin.
               </p>
               <p class="price">Pris: 99 kr</p>
-              <input type="number" class="qty-input" value="1" min="1" />
+              <input type="number" class="qty-input" value="1" min="1">
               <button
                 class="buy-button"
                 data-name="Kaffekoppar"
@@ -220,7 +224,7 @@
           </article>
 
           <article class="product">
-            <img src="images/coffefilter.jpg" alt="Kaffefilter av papper" />
+            <img src="images/coffefilter.jpg" alt="Kaffefilter av papper">
             <div class="product-content">
               <h3>Kaffefilter</h3>
               <p>
@@ -228,7 +232,7 @@
                 kaffebryggare eller tratt.
               </p>
               <p class="price">Pris: 49 kr</p>
-              <input type="number" class="qty-input" value="1" min="1" />
+              <input type="number" class="qty-input" value="1" min="1">
               <button
                 class="buy-button"
                 data-name="Kaffefilter"
@@ -277,7 +281,7 @@
               name="name"
               autocomplete="name"
               required
-            />
+            >
           </div>
 
           <div>
@@ -288,7 +292,7 @@
               name="email"
               autocomplete="email"
               required
-            />
+            >
           </div>
 
           <div>
