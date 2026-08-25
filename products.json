@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Ljusrostat kaffe",
+    "description": "Ett friskt och balanserat kaffe med fruktiga toner och en lätt syra. Perfekt för dig som gillar ett aromatiskt kaffe.",
+    "price": 129,
+    "image": "images/coffe1.jpg",
+    "imageAlt": "Ljusrostade kaffebönor",
+    "badge": "Nyhet"
+  },
+  {
+    "id": 2,
+    "name": "Mörkrostat kaffe",
+    "description": "Ett intensivt och fylligt kaffe med rökiga toner av mörk choklad. En klassiker för dig som gillar ett starkt kaffe.",
+    "price": 139,
+    "image": "images/coffe2.jpg",
+    "imageAlt": "Mörkrostade kaffebönor",
+    "badge": ""
+  },
+  {
+    "id": 3,
+    "name": "Kaffemaskin",
+    "description": "En pålitlig kaffemaskin för dig som vill brygga jämn, smakrikt kaffe hemma varje morgon.",
+    "price": 899,
+    "image": "images/coffemachine.jpg",
+    "imageAlt": "Kaffemaskin",
+    "badge": "Nyhet"
+  },
+  {
+    "id": 4,
+    "name": "Fransk press",
+    "description": "Bryggning helt utan pappersfilter ger ett fylligare kaffe med mer kropp och naturliga oljor kvar i smaken.",
+    "price": 249,
+    "image": "images/frenchpress.jpg",
+    "imageAlt": "Fransk press",
+    "badge": "Populär"
+  },
+  {
+    "id": 5,
+    "name": "Kaffekoppar",
+    "description": "Eleganta glasmuggar som visar upp kaffets färg. Säljs styckvis, perfekt för din morgonrutin.",
+    "price": 99,
+    "image": "images/coffemug.jpg",
+    "imageAlt": "Glasmuggar",
+    "badge": "Populär"
+  },
+  {
+    "id": 6,
+    "name": "Kaffefilter",
+    "description": "Pappersfilter av hög kvalitet för dig som bryggar kaffe i vanlig kaffebryggare eller tratt.",
+    "price": 49,
+    "image": "images/coffefilter.jpg",
+    "imageAlt": "Kaffefilter av papper",
+    "badge": ""
+  }
+]
